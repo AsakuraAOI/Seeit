@@ -1,0 +1,7 @@
+node_modules/
+dist/
+coverage/
+data/
+.env
+seeit.config.local.json
+seeit.config.*.local.json

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "connections": {
+    "siliconflow": {
+      "type": "openai-compatible",
+      "baseUrl": "https://api.siliconflow.cn/v1",
+      "apiKey": "sk-swqnjnncmlpfmewscfubgsdxpyiiiiiwltlfqmhxvusjsolw",
+      "timeoutMs": 300000,
+      "jsonMode": false
+    },
+    "deepseek": {
+      "type": "openai-compatible",
+      "baseUrl": "https://api.deepseek.com/v1",
+      "apiKey": "sk-a3b617c0b17d40c988dc3406e232e3d2",
+      "timeoutMs": 120000,
+      "jsonMode": true
+    }
+  },
+  "models": {
+    "llm": {
+      "connection": "deepseek",
+      "model": "deepseek-v4-flash"
+    },
+    "vision": {
+      "connection": "siliconflow",
+      "model": "Qwen/Qwen3-VL-32B-Thinking"
+    },
+    "asr": {
+      "connection": "siliconflow",
+      "model": "Qwen/Qwen3-ASR-1.7B"
+    }
+  }
+}

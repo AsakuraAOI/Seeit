@@ -1,0 +1,134 @@
+{
+  "source": "C:\\Users\\Hyper\\Desktop\\github\\seeit\\1.mp4",
+  "startedAt": "2026-10-08T10:10:32.558Z",
+  "qualityAssessment": "pending user review",
+  "requests": [
+    {
+      "kind": "llm",
+      "durationMs": 20206,
+      "reasoningEffort": "low",
+      "model": "deepseek-v4-flash",
+      "status": 200,
+      "usage": {
+        "prompt_tokens": 1766,
+        "completion_tokens": 4238,
+        "total_tokens": 6004,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3127
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1766
+      }
+    },
+    {
+      "kind": "llm",
+      "durationMs": 11500,
+      "reasoningEffort": "low",
+      "model": "deepseek-v4-flash",
+      "status": 200,
+      "usage": {
+        "prompt_tokens": 1212,
+        "completion_tokens": 2599,
+        "total_tokens": 3811,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1869
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1212
+      }
+    }
+  ],
+  "stages": {
+    "processMs": 20283,
+    "summaryMs": 11501
+  },
+  "decoderProcesses": 0,
+  "inferencePolicy": {
+    "deepseekReasoningEffort": "low",
+    "tokenLimit": "provider default; max_tokens omitted",
+    "scope": "this review only; provider config unchanged"
+  },
+  "previousAttempts": [
+    {
+      "startedAt": "2026-10-08T10:06:21.731Z",
+      "requests": [
+        {
+          "kind": "asr",
+          "durationMs": 12440,
+          "status": 200,
+          "usage": {
+            "type": "duration",
+            "seconds": 398
+          }
+        },
+        {
+          "kind": "llm",
+          "durationMs": 27626,
+          "model": "deepseek-v4-flash",
+          "status": 200,
+          "usage": {
+            "prompt_tokens": 1766,
+            "completion_tokens": 6000,
+            "total_tokens": 7766,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 6000
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1766
+          }
+        }
+      ],
+      "stages": {},
+      "failed": true
+    },
+    {
+      "startedAt": "2026-10-08T10:09:14.312Z",
+      "requests": [
+        {
+          "kind": "llm",
+          "durationMs": 119,
+          "reasoningEffort": "low",
+          "maxOutputTokens": 16384,
+          "model": "deepseek-v4-flash",
+          "failed": true
+        }
+      ],
+      "stages": {},
+      "failed": true
+    },
+    {
+      "startedAt": "2026-10-08T10:09:56.335Z",
+      "requests": [
+        {
+          "kind": "llm",
+          "durationMs": 120,
+          "reasoningEffort": "low",
+          "model": "deepseek-v4-flash",
+          "failed": true
+        }
+      ],
+      "stages": {},
+      "failed": true
+    }
+  ],
+  "videoDurationSeconds": 397.247732,
+  "perception": {
+    "generatedRequests": 3,
+    "plannedRequests": 0,
+    "executedRequests": 0,
+    "deferredRequests": 3,
+    "framesExtracted": 0,
+    "visionBatches": 0,
+    "cacheHits": 0
+  },
+  "completedAt": "2026-10-08T10:11:04.347Z"
+}
